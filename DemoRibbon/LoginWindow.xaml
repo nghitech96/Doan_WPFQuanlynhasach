@@ -1,0 +1,84 @@
+﻿<Window x:Class="DemoRibbon.LoginWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DemoRibbon"
+        mc:Ignorable="d"
+        Title="LoginWindow" Height="351" Width="828" Loaded="Window_Load">
+    <Canvas Margin="0,0,-312,0" Height="341" VerticalAlignment="Top">
+        <Label Content="ĐĂNG NHẬP VÀO HỆ THỐNG CỬA HÀNG" Width="479" Height="47" Canvas.Left="349" Canvas.Top="48" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="20" FontFamily="Times New Roman"/>
+        <Label Content="Tài khoản: " Width="154" Height="NaN" Canvas.Left="310" Canvas.Top="113" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtUserName" Text="{Binding Username}" Height="26" Width="256" Canvas.Left="392" Canvas.Top="113" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Label Content="Mật khẩu: " Canvas.Left="310" Canvas.Top="159" Height="NaN"/>
+        <PasswordBox x:Name="txtPassword" PasswordChar="*" Height="26" Width="256" Canvas.Left="392" Canvas.Top="154" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <CheckBox x:Name="rememberPassCheckbox" Content="Remember Password" Canvas.Left="390" Canvas.Top="196" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Button x:Name="login" Click="btn_login" Width="116" Height="35" Content="Đăng nhập"  Canvas.Left="455" Canvas.Top="238"/>
+        <Button x:Name="exit" Click="btn_exit" Width="78" Height="27" Content="Thoát"  RenderTransformOrigin="0.119,0.676" Canvas.Left="750" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Button Content="Server settings" Cursor="Hand" Canvas.Left="550" Canvas.Top="195">
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <TextBlock TextDecorations="Underline">
+                <ContentPresenter />
+                    </TextBlock>
+                </ControlTemplate>
+            </Button.Template>
+            <Button.Style>
+                <Style TargetType="Button">
+                    <Setter Property="Foreground" Value="Blue" />
+                    <Style.Triggers>
+                        <Trigger Property="IsMouseOver" Value="true">
+                            <Setter Property="Foreground" Value="Red" />
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </Button.Style>
+        </Button>
+
+        <ProgressBar Name="loadingProgressBar" Width="18" Height="16" Minimum="0" Maximum="100" Value="{Binding loadingProgress}" Canvas.Left="653" Canvas.Top="159" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="4.694,-0.935" />
+        <Button x:Name="selectButton" Width="100" Height="35" Content="Select" Canvas.Left="470" Canvas.Top="352" Click="select"/>
+
+
+        <Border CornerRadius="12">
+
+
+            <Border 
+                BorderThickness="5" Opacity="0.55" Height="334" Width="280">
+                <Border.BorderBrush>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                        <GradientStop Color="#4169E1" Offset="0"/>
+                        <GradientStop Color="#FFE4B5" Offset="0"/>
+                        <GradientStop Color="#000080" Offset="0"/>
+                    </LinearGradientBrush>
+                </Border.BorderBrush>
+
+                <Border.Background>
+                    <LinearGradientBrush StartPoint="0,1" EndPoint="1,0">
+                        <GradientStop Color="#4169E1" Offset="0"/>
+                        <GradientStop Color="#FFE4B5" Offset="0"/>
+                        <GradientStop Color="#000080" Offset="0"/>
+                    </LinearGradientBrush>
+                </Border.Background>
+
+                <StackPanel>
+                    <TextBlock Text="NHÀ SÁCH"
+                               Foreground="#FFFFFF"
+                               FontSize="25"
+                               FontWeight="Medium"
+                               FontFamily="Times New Roman" 
+                               Height="51" Width="159"
+                               Opacity="1"
+                               />
+                    <TextBlock Text="PHƯƠNG NAM"
+                               Foreground="#FFFFFF"
+                               FontSize="40"
+                               FontWeight="Medium"
+                               FontFamily="Times New Roman" 
+                               Height="51" Width="270"
+                               />
+                </StackPanel>
+            </Border>
+        </Border>
+
+    </Canvas>
+</Window>

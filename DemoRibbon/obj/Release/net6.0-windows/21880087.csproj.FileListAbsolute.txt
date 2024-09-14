@@ -1,0 +1,2 @@
+C:\Users\DANGNGHI\source\repos\21880087\DemoRibbon\obj\Release\net6.0-windows\21880087.csproj.AssemblyReference.cache
+D:\backup_laptop_10082024\repos\21880087_test\DemoRibbon\obj\Release\net6.0-windows\21880087.csproj.AssemblyReference.cache

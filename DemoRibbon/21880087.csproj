@@ -1,0 +1,69 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Images\bookmark.png" />
+    <None Remove="Images\books.png" />
+    <None Remove="Images\boy.png" />
+    <None Remove="Images\diskette.png" />
+    <None Remove="Images\nha_sach.jpg" />
+    <None Remove="Images\olive-branch.png" />
+    <None Remove="Images\plus.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Avalonia.Controls.DataGrid" Version="11.0.5" />
+    <PackageReference Include="ConfigurationBuilder" Version="1.0.0" />
+    <PackageReference Include="DocumentFormat.OpenXml" Version="3.0.0" />
+    <PackageReference Include="DocumentFormat.OpenXml.VariableReplacer" Version="0.1.0" />
+    <PackageReference Include="EPPlus" Version="7.0.2" />
+    <PackageReference Include="ExcelDataReader" Version="3.6.0" />
+    <PackageReference Include="ExcelDataReader.DataSet" Version="3.6.0" />
+    <PackageReference Include="Extensions.Configuration" Version="0.0.4" />
+    <PackageReference Include="Fluent.Ribbon" Version="10.0.3" />
+    <PackageReference Include="LiveCharts" Version="0.9.7" />
+    <PackageReference Include="LiveCharts.WinForms" Version="0.9.7.1" />
+    <PackageReference Include="LiveCharts.Wpf" Version="0.9.7" />
+    <PackageReference Include="LiveCharts.Wpf.Core" Version="0.9.8" />
+    <PackageReference Include="LiveCharts.Wpf.FixTooltip" Version="0.9.8" />
+    <PackageReference Include="MaterialDesign.Avalonia.PackIcon" Version="1.34.0" />
+    <PackageReference Include="MaterialDesignColors" Version="2.1.4" />
+    <PackageReference Include="MaterialDesignThemes" Version="4.9.0" />
+    <PackageReference Include="MetroChart.WPF" Version="0.0.0.3" />
+    <PackageReference Include="Microsoft.Data.SqlClient" Version="5.1.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.25">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.25" />
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="8.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.UserSecrets" Version="8.0.0" />
+    <PackageReference Include="ModernUICharts.WPF.Beta" Version="0.9.1" />
+    <PackageReference Include="Orchestra.Shell.Ribbon.Fluent" Version="6.8.1" />
+    <PackageReference Include="PropertyChanged.Fody" Version="4.1.0" />
+    <PackageReference Include="RibbonWinForms" Version="5.0.1.1" />
+    <PackageReference Include="Syncfusion.SfGauge.WPF" Version="23.2.6" />
+    <PackageReference Include="Syncfusion.SfRadialMenu.WPF" Version="23.2.6" />
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="8.0.0" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.5" />
+    <PackageReference Include="System.Windows.Forms.Ribbon35" Version="3.5.8" />
+    <PackageReference Include="XamlRadialProgressBar" Version="1.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\bookmark.png" />
+    <Resource Include="Images\books.png" />
+    <Resource Include="Images\boy.png" />
+    <Resource Include="Images\diskette.png" />
+    <Resource Include="Images\nha_sach.jpg" />
+    <Resource Include="Images\olive-branch.png" />
+    <Resource Include="Images\plus.png" />
+  </ItemGroup>
+
+</Project>

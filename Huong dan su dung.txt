@@ -1,0 +1,4 @@
+Hướng dẫn sử dụng:
+- Màn hình Login: sử dụng Sql server có user ID: sa, password: Nghidang1234, database UserLogin
+- Màn hình Sản phẩm: sử dụng database là file Excel "Sach"
+- Màn hình Đơn hàng: sử dụng database là 1 file Excel "Don_hang"
